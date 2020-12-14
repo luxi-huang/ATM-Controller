@@ -151,6 +151,8 @@ public:
                     double depositAmount;
                     cin >> depositAmount;
                     balance += depositAmount;
+                    cout << "Please insert money into cashbin" << endl;
+                    cin.ignore();
                     cout << "Deposit Success!" << endl;
                     break;
                 // case3: Withdraw     
@@ -161,6 +163,8 @@ public:
                     if (withdrawAmount <= balance) {
                         cout << "Please insert money and press enter key: ";
                         balance -= withdrawAmount;
+                        cout << "Please get money into cash bin" << endl;
+                        cin.ignore();
                         cout << "Withdraw success!" << endl;
                     } else {
                         cout << "Not enough money." << endl;
